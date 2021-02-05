@@ -1,4 +1,6 @@
 #include<iostream>
+#include<stddef.h>
+#include "zjyList.h"
 using namespace std;
 
 int Gcd(int M,int N);
@@ -7,7 +9,11 @@ bool IsEven(int num);
 
 int main(){
         int M=0,N=0,ans=0;
-        cout<<"hello world!"<<endl;
+        string str1,str2;
+        str1="hello world!";
+        str2="hello"" "" world!";
+        cout<<"str1:"<<str1<<endl;
+        cout<<"str2:"<<str2<<endl;
         cin>>M>>N;
         ans=Pow(M,N);
         cout<<ans<<endl;
