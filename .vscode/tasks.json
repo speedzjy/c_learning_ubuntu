@@ -7,7 +7,7 @@
                         "label": "build",
                         "type": "shell",
                         "command": "g++",
-                        "args": ["-g", "${file}", "-std=c++11", "-o", "${fileBasenameNoExtension}"]
+                        "args": ["-g", "${file}","-g", "${fileDirname}/zjyList.cpp", "-std=c++11", "-o", "${fileBasenameNoExtension}"]
                 }
         ]
 }
