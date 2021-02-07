@@ -1,6 +1,9 @@
 #include<iostream>
 #include<stddef.h>
 #include "zjyList.h"
+#include "zjyStack.h"
+#include<stdlib.h>
+#include<malloc.h>
 using namespace std;
 
 int Gcd(int M,int N);
@@ -8,15 +11,26 @@ long int Pow(long int X, int N);
 bool IsEven(int num);
 
 int main(){
-        int M=0,N=0,ans=0;
+        int M=0,N=0,W=0,ans=0;
         string str1,str2;
         str1="hello world!";
         str2="hello"" "" world!";
         cout<<"str1:"<<str1<<endl;
         cout<<"str2:"<<str2<<endl;
-        cin>>M>>N;
-        ans=Pow(M,N);
-        cout<<ans<<endl;
+        List L;
+        L=CreateList();
+        cout<<"input number to insert"<<endl;
+
+        cin>>M>>N>>W;
+        insertback(M,L);
+        insertback(N,L);
+        
+        insertback(W,L);
+        printList(L);
+        L=ReverseList(L);
+        printList(L);
+        //ans=Pow(M,N);
+        cout<<"debug success"<<endl;
         return 0;
 }
 
